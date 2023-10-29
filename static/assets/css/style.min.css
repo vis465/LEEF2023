@@ -2642,44 +2642,25 @@ ul {
 }
 
 .preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position:fixed;
     z-index: 999999;
-    width: 100%;
-    height: 100%;
-    background: #f1c152
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    background: url('/static/assets/images/WhatsApp\ Video\ 2023-10-29\ at\ 21.49.27.gif') center center no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    background-color: transparent;
 }
 
-.preloader .preloader-inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%)
-}
 
-.preloader .preloader-inner .preloader-icon {
-    width: 72px;
-    height: 72px;
-    display: inline-block;
-    padding: 0px
-}
 
-.preloader .preloader-inner .preloader-icon span {
-    position: absolute;
-    display: inline-block;
-    width: 72px;
-    height: 72px;
-    border-radius: 100%;
-    background: #fff;
-    -webkit-animation: preloader-fx 1.6s linear infinite;
-    animation: preloader-fx 1.6s linear infinite
-}
+
+
+
 
 .preloader .preloader-inner .preloader-icon span:last-child {
-    animation-delay: -0.8s;
-    -webkit-animation-delay: -0.8s
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s
 }
 
 .eventtime {
